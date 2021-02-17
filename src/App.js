@@ -21,7 +21,7 @@ function App() {
       </header>
       <hr />
       <main>
-        <Route exact path="/" component={Main} />
+        <Route exact path="/react_study" component={Main} />
         <Route path="/page1" component={Page1} />
         <Route path="/page2" component={Page2} />
       </main>

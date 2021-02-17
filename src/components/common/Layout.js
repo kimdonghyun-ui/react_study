@@ -1,14 +1,18 @@
-import React from 'react';
-import Header from './Header'
-import Footer from './Footer'
+import React from "react";
+import { Container, CssBaseline } from "@material-ui/core";
+import Header from "./Header";
+import Footer from "./Footer";
 
-function Layout({children}) {
+function Layout({ children }) {
   return (
-    <div>
+    <React.Fragment>
+      <CssBaseline />
+      <Container disableGutters maxWidth="sm">
         <Header />
         <div>{children}</div>
         <Footer />
-    </div>
+      </Container>
+    </React.Fragment>
   );
 }
 
