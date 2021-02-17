@@ -1,12 +1,12 @@
-import React from 'react';
-import Layout from './common/Layout'
+import React from "react";
+import Layout from "./common/Layout";
 
 function Main() {
   return (
     <div>
-
-<Layout><h1>메인</h1></Layout>
-
+      <Layout>
+        <h1>메인</h1>
+      </Layout>
     </div>
   );
 }
