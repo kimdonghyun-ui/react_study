@@ -1,9 +1,9 @@
-import React from "react";
+import React from 'react';
 
-import { Link, Route, BrowserRouter as Router } from "react-router-dom";
-import Main from "./components/main";
-import Page1 from "./components/page1";
-import Page2 from "./components/page2";
+import { Link, Route, BrowserRouter as Router } from 'react-router-dom';
+import Main from './components/main';
+import Page1 from './components/page1';
+import Page2 from './components/page2';
 
 function App() {
   return (
@@ -21,7 +21,7 @@ function App() {
       </header>
       <hr />
       <main>
-        <Route exact path="/" component={Main} />
+        <Route exact path="/react_study" component={Main} />
         <Route path="/page1" component={Page1} />
         <Route path="/page2" component={Page2} />
       </main>
