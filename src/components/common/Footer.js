@@ -1,23 +1,23 @@
-import React from "react";
-import Box from "@material-ui/core/Box";
-import { makeStyles } from "@material-ui/core/styles";
-import Grid from "@material-ui/core/Grid";
-import logoF from "../../images/f_logo.png";
+import React from 'react';
+import Box from '@material-ui/core/Box';
+import { makeStyles } from '@material-ui/core/styles';
+import Grid from '@material-ui/core/Grid';
+import logoF from '../../images/f_logo.png';
 
 const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,
-    backgroundColor: "#2f2f2f",
-    textAlign: "center",
-    padding: "3vw 2.5vw 3.5vw",
+    backgroundColor: '#2f2f2f',
+    textAlign: 'center',
+    padding: '3vw 2.5vw 3.5vw',
   },
   ftxt: {
-    textAlign: "center",
-    marginTop: "2vw",
-    color: "#828282",
-    fontSize: "1.8vw",
-    "& p": {
-      margin: "0",
+    textAlign: 'center',
+    marginTop: '2vw',
+    color: '#828282',
+    fontSize: '1.8vw',
+    '& p': {
+      margin: '0',
     },
   },
 }));
@@ -38,9 +38,7 @@ function Footer() {
               TEL : 02-714-8026 &nbsp; FAX : 02-706-8025 &nbsp; 이메일 :
               info@bizvalley.co.kr
             </p>
-            <p class="fs12">
-              Copyrights ⓒ 2017 All Rights Reserved. Designed By bizvalley.
-            </p>
+            <p>Copyrights ⓒ 2017 All Rights Reserved. Designed By bizvalley.</p>
           </div>
         </Grid>
       </Grid>
