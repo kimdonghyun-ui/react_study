@@ -57,7 +57,7 @@ export default function SimpleAccordion() {
         >
           <Typography variant="body1">
             <Link
-              to="/"
+              to="/react_study"
               component={Button}
               className={classes.sub_item}
               variant="body1"
