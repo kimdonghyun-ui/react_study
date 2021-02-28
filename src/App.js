@@ -5,11 +5,17 @@ import Main from './components/main';
 import Page1 from './components/page1';
 import Page2 from './components/page2';
 import Menu from './components/Menu';
-
+import { Link } from 'react-router-dom';
 function App() {
   return (
     <Router>
-      {/* <header>
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <header>
         <Link to="/">
           <button>Main</button>
         </Link>
@@ -19,12 +25,15 @@ function App() {
         <Link to="/page2">
           <button>Page2</button>
         </Link>
-      </header> */}
+        <Link to="/menu">
+          <button>menu</button>
+        </Link>
+      </header>
 
       <Route exact path={['/', '/react_study']} component={Main} />
       <Route path="/page1" component={Page1} />
-      <Route path="/react_study/page2" component={Page2} />
-      <Route path="/react_study/menu" component={Menu} />
+      <Route path="/page2" component={Page2} />
+      <Route path="/menu" component={Menu} />
     </Router>
   );
 }
