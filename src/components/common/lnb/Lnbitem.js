@@ -5,8 +5,8 @@ import AccordionSummary from '@material-ui/core/AccordionSummary';
 import AccordionDetails from '@material-ui/core/AccordionDetails';
 import Typography from '@material-ui/core/Typography';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
-import { Link } from 'react-router-dom';
-// import Link from '@material-ui/core/Link';
+// import { Link } from 'react-router-dom';
+import Link from '@material-ui/core/Link';
 import { Button } from '@material-ui/core';
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -57,7 +57,7 @@ export default function SimpleAccordion() {
         >
           <Typography variant="body1">
             <Link
-              to="/react_study"
+              href="/react_study"
               component={Button}
               className={classes.sub_item}
               variant="body1"
@@ -66,7 +66,7 @@ export default function SimpleAccordion() {
               - 메인으로 가기
             </Link>
             <Link
-              to="/page1"
+              href="/page1"
               component={Button}
               className={classes.sub_item}
               variant="body1"
@@ -75,7 +75,7 @@ export default function SimpleAccordion() {
               - 브랜드 스토리
             </Link>
             <Link
-              to="/react_study/page1"
+              href="/react_study/page1"
               component={Button}
               className={classes.sub_item}
               variant="body1"
@@ -84,7 +84,7 @@ export default function SimpleAccordion() {
               - 브랜드 경쟁력
             </Link>
             <Link
-              to="/react_study/page1"
+              href="/react_study/page1"
               component={Button}
               className={classes.sub_item}
               variant="body1"
@@ -93,7 +93,7 @@ export default function SimpleAccordion() {
               - 인테리어 컨셉
             </Link>
             <Link
-              to="/react_study/page1"
+              href="/react_study/page1"
               component={Button}
               className={classes.sub_item}
               variant="body1"
@@ -126,7 +126,7 @@ export default function SimpleAccordion() {
         >
           <Typography variant="body1">
             <Link
-              to="/react_study/menu"
+              href="/react_study/menu"
               component={Button}
               className={classes.sub_item}
               variant="body1"
