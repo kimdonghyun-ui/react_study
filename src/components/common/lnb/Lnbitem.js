@@ -66,7 +66,7 @@ export default function SimpleAccordion() {
               - 메인으로 가기
             </Link>
             <Link
-              to="/page1"
+              to="/react_study/page1"
               component={Button}
               className={classes.sub_item}
               variant="body1"
@@ -75,7 +75,7 @@ export default function SimpleAccordion() {
               - 브랜드 스토리
             </Link>
             <Link
-              to="/page1"
+              to="/react_study/page1"
               component={Button}
               className={classes.sub_item}
               variant="body1"
@@ -84,7 +84,7 @@ export default function SimpleAccordion() {
               - 브랜드 경쟁력
             </Link>
             <Link
-              to="/page1"
+              to="/react_study/page1"
               component={Button}
               className={classes.sub_item}
               variant="body1"
@@ -93,7 +93,7 @@ export default function SimpleAccordion() {
               - 인테리어 컨셉
             </Link>
             <Link
-              to="/page1"
+              to="/react_study/page1"
               component={Button}
               className={classes.sub_item}
               variant="body1"
@@ -126,22 +126,13 @@ export default function SimpleAccordion() {
         >
           <Typography variant="body1">
             <Link
-              to="/page2"
+              to="/react_study/menu"
               component={Button}
               className={classes.sub_item}
               variant="body1"
               gutterBottom
             >
-              - 카테고리01
-            </Link>
-            <Link
-              to="/page2"
-              component={Button}
-              className={classes.sub_item}
-              variant="body1"
-              gutterBottom
-            >
-              - 카테고리02
+              - 메뉴 보기
             </Link>
           </Typography>
         </AccordionDetails>
