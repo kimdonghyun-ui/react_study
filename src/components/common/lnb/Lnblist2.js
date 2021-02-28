@@ -14,6 +14,8 @@ import MailIcon from '@material-ui/icons/Mail';
 import IconButton from '@material-ui/core/IconButton';
 import MenuIcon from '@material-ui/icons/Menu';
 
+import Lnbitem from './Lnbitem';
+
 const useStyles = makeStyles({
   list: {
     width: 250,
@@ -29,7 +31,7 @@ const useStyles = makeStyles({
   },
 });
 
-export default function SwipeableTemporaryDrawer() {
+const SwipeableTemporaryDrawer = () => {
   const classes = useStyles();
   const [state, setState] = React.useState({
     top: false,
@@ -59,6 +61,7 @@ export default function SwipeableTemporaryDrawer() {
       onClick={toggleDrawer(anchor, false)}
       onKeyDown={toggleDrawer(anchor, false)}
     >
+      {/* <Lnbitem /> */}
       <List>
         {['Inbox', 'Starred', 'Send email', 'Drafts'].map((text, index) => (
           <ListItem button key={text}>
@@ -86,6 +89,7 @@ export default function SwipeableTemporaryDrawer() {
   return (
     <>
       <div>
+        hello
         {['left', 'right', 'top', 'bottom'].map((anchor) => (
           <React.Fragment key={anchor}>
             {/* <Button onClick={toggleDrawer(anchor, true)}>{anchor}</Button> */}
@@ -115,4 +119,6 @@ export default function SwipeableTemporaryDrawer() {
       </IconButton>
     </>
   );
-}
+};
+
+export default SwipeableTemporaryDrawer;

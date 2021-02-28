@@ -6,7 +6,7 @@ import Fab from '@material-ui/core/Fab';
 
 import MailOutlineIcon from '@material-ui/icons/MailOutline';
 import logo from '../../images/common/logo.png';
-import Lnblist from './Lnblist';
+import Lnblist from './lnb/Lnblist';
 
 const useStyles = makeStyles((theme) => ({
   root: {
