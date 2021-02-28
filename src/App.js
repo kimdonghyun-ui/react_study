@@ -22,7 +22,7 @@ function App() {
       </header> */}
 
       <Route exact path={['/', '/react_study']} component={Main} />
-      <Route path="/react_study/page1" component={Page1} />
+      <Route path="/page1" component={Page1} />
       <Route path="/react_study/page2" component={Page2} />
       <Route path="/react_study/menu" component={Menu} />
     </Router>
