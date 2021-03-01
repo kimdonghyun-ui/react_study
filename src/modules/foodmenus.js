@@ -1,21 +1,22 @@
 const SETALLMENU = 'menu/SETALLMENU';
+const SETDATA = 'menu/SETDATA';
 
 export const setallmenu = (new_list) => ({
   type: SETALLMENU,
   new_list,
 });
 
+export const setdata = (data) => ({
+  type: SETDATA,
+  data,
+});
+
 const initialState = {
-  allmenu: {
-    menu01: [],
-    menu02: [],
-    menu03: [],
-    menu04: [],
-    menu05: [],
-  },
+  typemenu: [],
+  allmenu: [],
 };
 
-function menus(state = initialState, action) {
+function foodmenus(state = initialState, action) {
   switch (action.type) {
     case SETALLMENU:
       return {
@@ -23,6 +24,19 @@ function menus(state = initialState, action) {
         allmenu: action.new_list,
       };
 
+    case SETDATA:
+      return {
+        ...state,
+        typemenu: [
+          ...state.typemenu,
+          state.allmenu.filter((todo) => todo.type === action.data),
+        ],
+      };
+    // case SETDATA:
+    //   return {
+    //     ...state,
+    //     typemenu: state.allmenu.filter((todo) => todo.type === action.data),
+    //   };
     // case CHANGE_INPUT:
     //   return {
     //     ...state,
@@ -53,4 +67,4 @@ function menus(state = initialState, action) {
   }
 }
 
-export default menus;
+export default foodmenus;

@@ -1,12 +1,12 @@
 import { combineReducers } from 'redux';
 import counter from './counter';
 import todos from './todos';
-import menus from './menus';
+import foodmenus from './foodmenus';
 
 const rootReducer = combineReducers({
   counter,
   todos,
-  menus,
+  foodmenus,
 });
 
 export default rootReducer;
