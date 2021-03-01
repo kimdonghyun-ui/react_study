@@ -75,7 +75,7 @@ export default function SimpleAccordion() {
               - 브랜드 스토리
             </Link>
             <Link
-              href="/react_study/page1"
+              href="/page1"
               component={Button}
               className={classes.sub_item}
               variant="body1"
@@ -84,7 +84,7 @@ export default function SimpleAccordion() {
               - 브랜드 경쟁력
             </Link>
             <Link
-              href="/react_study/page1"
+              href="/page1"
               component={Button}
               className={classes.sub_item}
               variant="body1"
@@ -93,7 +93,7 @@ export default function SimpleAccordion() {
               - 인테리어 컨셉
             </Link>
             <Link
-              href="/react_study/page1"
+              href="/page1"
               component={Button}
               className={classes.sub_item}
               variant="body1"
@@ -126,7 +126,7 @@ export default function SimpleAccordion() {
         >
           <Typography variant="body1">
             <Link
-              href="/react_study/menu"
+              href="/menu"
               component={Button}
               className={classes.sub_item}
               variant="body1"

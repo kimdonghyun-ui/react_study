@@ -5,11 +5,11 @@ import Main from './components/main';
 import Page1 from './components/page1';
 import Page2 from './components/page2';
 import Menu from './components/Menu';
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
 function App() {
   return (
     <Router>
-      <br />
+      {/* <br />
       <br />
       <br />
       <br />
@@ -28,7 +28,7 @@ function App() {
         <Link to="/menu">
           <button>menu</button>
         </Link>
-      </header>
+      </header> */}
       <Switch>
         <Route exact path={['/', '/react_study']} component={Main} />
         <Route path="/page1" component={Page1} />
