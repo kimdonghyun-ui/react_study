@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Route, BrowserRouter as Router } from 'react-router-dom';
+import { Route, Switch, BrowserRouter as Router } from 'react-router-dom';
 import Main from './components/main';
 import Page1 from './components/page1';
 import Page2 from './components/page2';
@@ -29,11 +29,12 @@ function App() {
           <button>menu</button>
         </Link>
       </header>
-
-      <Route exact path={['/', '/react_study']} component={Main} />
-      <Route path="/page1" component={Page1} />
-      <Route path="/page2" component={Page2} />
-      <Route path="/menu" component={Menu} />
+      <Switch>
+        <Route exact path={['/', '/react_study']} component={Main} />
+        <Route path="/page1" component={Page1} />
+        <Route path="/page2" component={Page2} />
+        <Route path="/menu" component={Menu} />
+      </Switch>
     </Router>
   );
 }
