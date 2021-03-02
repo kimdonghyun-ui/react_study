@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Route, Switch, BrowserRouter as Router } from 'react-router-dom';
+import { HashRouter, Route, Switch, BrowserRouter as Router } from 'react-router-dom';
 import Main from './components/main';
 import Page1 from './components/page1';
 import Page2 from './components/page2';
@@ -8,7 +8,7 @@ import Foodmenu from './containers/Foodmenu/Foodmenu';
 // import { Link } from 'react-router-dom';
 function App() {
   return (
-    <Router>
+    <HashRouter>
       {/* <br />
       <br />
       <br />
@@ -35,7 +35,7 @@ function App() {
         <Route path="/page2" component={Page2} />
         <Route path="/menu" component={Foodmenu} />
       </Switch>
-    </Router>
+    </HashRouter>
   );
 }
 

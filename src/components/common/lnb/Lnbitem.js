@@ -5,8 +5,8 @@ import AccordionSummary from '@material-ui/core/AccordionSummary';
 import AccordionDetails from '@material-ui/core/AccordionDetails';
 import Typography from '@material-ui/core/Typography';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
-// import { Link } from 'react-router-dom';
-import Link from '@material-ui/core/Link';
+import { Link } from 'react-router-dom';
+//import Link from '@material-ui/core/Link';
 import { Button } from '@material-ui/core';
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -126,7 +126,7 @@ export default function SimpleAccordion() {
         >
           <Typography variant="body1">
             <Link
-              href="/menu"
+              to="/menu"
               component={Button}
               className={classes.sub_item}
               variant="body1"
