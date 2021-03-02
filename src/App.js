@@ -8,7 +8,7 @@ import Foodmenu from './containers/Foodmenu/Foodmenu';
 // import { Link } from 'react-router-dom';
 function App() {
   return (
-    <BrowserRouter basename="/">
+    <BrowserRouter basename="/react_study">
       <Switch>
         <Route exact path={['/', '/react_study']} component={Main} />
         <Route path="/page1" component={Page1} />
