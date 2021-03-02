@@ -66,7 +66,7 @@ export default function SimpleAccordion() {
               - 메인으로 가기
             </Link>
             <Link
-              href="/page1"
+              to="/page1"
               component={Button}
               className={classes.sub_item}
               variant="body1"
