@@ -1,12 +1,12 @@
 import React, { useEffect } from 'react';
 import Layout from '../../components/common/Layout';
-
+import Foodlist from './Foodlist';
 import { connect } from 'react-redux';
-import { setallmenu, setdata } from '../../modules/foodmenus';
+import { setallmenu, remove } from '../../modules/foodmenus';
 
-import Divider from '@material-ui/core/Divider';
 
-const Foodmenu = ({ allmenu, typemenu, setallmenu, setdata }) => {
+
+const Foodmenu = ({ allmenu, typemenu, setallmenu, setdata,remove }) => {
   useEffect(() => {
     console.log('초기 데이터 넣기');
     setallmenu([
@@ -68,36 +68,22 @@ const Foodmenu = ({ allmenu, typemenu, setallmenu, setdata }) => {
       },
     ]);
 
-    setdata('떡볶이');
-    setdata('튀김');
-    setdata('순대와어묵');
-    setdata('김밥');
-    setdata('음료');
+    // setdata('떡볶이');
+    // setdata('튀김');
+    // setdata('순대와어묵');
+    // setdata('김밥');
+    // setdata('음료');
 
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
+
+
 
   return (
     <div>
       <Layout>
         <h1>메뉴</h1>
-        <div>
-          {typemenu.map((typs, index) => (
-            <div key={index}>
-              {typs.map((alls, index) => (
-                <div key={alls.id}>
-                  {index === 0 && <h2>{alls.type}</h2>}
-                  <div>
-                    <span>{alls.icon}</span>
-                    <img src={alls.img} alt={alls.name} />
-                    <p>{alls.name}</p>
-                  </div>
-                </div>
-              ))}
-              <Divider />
-            </div>
-          ))}
-        </div>
+        <Foodlist typemenu={typemenu} allmenu={allmenu} onRemove={remove} />
       </Layout>
     </div>
   );
@@ -111,8 +97,8 @@ const mapDispatchToProps = (dispatch) => ({
   setallmenu: (val) => {
     dispatch(setallmenu(val));
   },
-  setdata: (val) => {
-    dispatch(setdata(val));
+  remove: (val) => {
+    dispatch(remove(val));
   },
 });
 
