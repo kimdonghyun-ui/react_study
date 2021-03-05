@@ -7,7 +7,7 @@ import Typography from '@material-ui/core/Typography';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import { Link } from 'react-router-dom';
 //import Link from '@material-ui/core/Link';
-import { Button } from '@material-ui/core';
+// import { Button } from '@material-ui/core';
 const useStyles = makeStyles((theme) => ({
   root: {
     width: '100%',
@@ -58,46 +58,31 @@ export default function SimpleAccordion() {
           <Typography variant="body1">
             <Link
               to="/react_study"
-              component={Button}
               className={classes.sub_item}
-              variant="body1"
-              gutterBottom
             >
               - 메인으로 가기
             </Link>
             <Link
               to="/page1"
-              component={Button}
               className={classes.sub_item}
-              variant="body1"
-              gutterBottom
             >
               - 브랜드 스토리
             </Link>
             <Link
               to="/page1"
-              component={Button}
               className={classes.sub_item}
-              variant="body1"
-              gutterBottom
             >
               - 브랜드 경쟁력
             </Link>
             <Link
               to="/page1"
-              component={Button}
               className={classes.sub_item}
-              variant="body1"
-              gutterBottom
             >
               - 인테리어 컨셉
             </Link>
             <Link
               to="/page1"
-              component={Button}
               className={classes.sub_item}
-              variant="body1"
-              gutterBottom
             >
               - 본사 안내
             </Link>
@@ -127,10 +112,7 @@ export default function SimpleAccordion() {
           <Typography variant="body1">
             <Link
               to="/menu"
-              component={Button}
               className={classes.sub_item}
-              variant="body1"
-              gutterBottom
             >
               - 메뉴 보기
             </Link>
