@@ -16,6 +16,7 @@ const useStyles = makeStyles((theme) => ({
     display: 'flex',
     justifyContent: 'space-between',
     backgroundColor: '#d13030',
+    opacity: '0.05'
   },
   fabButton: {
     marginLeft: '12px',
