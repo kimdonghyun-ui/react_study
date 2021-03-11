@@ -9,18 +9,22 @@ import reportWebVitals from './reportWebVitals';
 
 import rootReducer from './modules';
 import { createLogger } from 'redux-logger';
+
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
+
 const logger = createLogger();
 
 const store = createStore(
   rootReducer,
-  composeWithDevTools(applyMiddleware(logger))
+  composeWithDevTools(applyMiddleware(logger)),
 );
 
 ReactDOM.render(
   <Provider store={store}>
     <App />
   </Provider>,
-  document.getElementById('root')
+  document.getElementById('root'),
 );
 
 // If you want to start measuring performance in your app, pass a function
